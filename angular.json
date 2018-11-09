@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "SideProject": {
+    "bruno-caetano-webfolio": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/SideProject",
+            "outputPath": "dist/bruno-caetano-webfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,7 +64,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "SideProject:build"
+            "browserTarget": "bruno-caetano-webfolio:build"
           }
         },
         "test": {
@@ -127,5 +127,5 @@
       }
     }
   },
-  "defaultProject": "SideProject"
+  "defaultProject": "bruno-caetano-webfolio"
 }
