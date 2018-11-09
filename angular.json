@@ -53,11 +53,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "SideProject:build"
+            "browserTarget": "bruno-caetano-webfolio:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "SideProject:build:production"
+              "browserTarget": "bruno-caetano-webfolio:build:production"
             }
           }
         },
@@ -107,11 +107,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "SideProject:serve"
+            "devServerTarget": "bruno-caetano-webfolio:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "SideProject:serve:production"
+              "devServerTarget": "bruno-caetano-webfolio:serve:production"
             }
           }
         },
