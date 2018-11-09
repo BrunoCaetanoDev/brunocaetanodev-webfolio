@@ -11,6 +11,7 @@ import { AppRouterModule } from './app-router.module';
 import { ProfileComponent } from './profile/profile.component';
 import { CareerComponent } from './career/career.component';
 import { TrainingComponent } from './training/training.component';
+import { ContactInfoComponent } from './contact-info/contact-info.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TrainingComponent } from './training/training.component';
     HomeComponent,
     ProfileComponent,
     CareerComponent,
-    TrainingComponent
+    TrainingComponent,
+    ContactInfoComponent
   ],
   imports: [
     MatToolbarModule,

@@ -37,7 +37,7 @@ mat-toolbar-row{
   display: inline-flex;
   vertical-align: middle;
 }
-.wrapper{
+#wrapper{
   height: 85%;
   width: 100%;
 }
@@ -50,4 +50,17 @@ mat-toolbar-row{
 }
 .sidebar-selected-option {
   color: white;
+}
+#option-icon{
+  align-items: flex-end;
+}
+main {
+  flex: 1;
+  position: relative;
+}
+
+/deep/ router-outlet ~ * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }

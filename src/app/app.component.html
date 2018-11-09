@@ -4,16 +4,16 @@
       <mat-toolbar-row></mat-toolbar-row>
       <mat-toolbar-row *ngFor="let option of options">
         <a routerLink="/{{option.path}}" routerLinkActive="sidebar-selected-option"><span>{{option.name | titlecase}}</span>
-          <mat-icon class="material-icons">{{option.icon}}</mat-icon>
+          <mat-icon class="material-icons" id="option-icon">{{option.icon}}</mat-icon>
         </a>
       </mat-toolbar-row>
     </mat-toolbar>
   </mat-sidenav>
   <mat-sidenav-content>
     <app-header></app-header>
-    <div class="wrapper">
-      <router-outlet></router-outlet>
-    </div>
+    <main id="wrapper" [@fadeAnimation]="getRouterOutletState(outlet)">
+      <router-outlet #outlet="outlet"></router-outlet>
+    </main>
     <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>
