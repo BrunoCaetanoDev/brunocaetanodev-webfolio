@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "postinstall": "ng build --aot -prod",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -11,6 +12,8 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "~6.2.6",
+    "@angular/compiler-cli": "^6.1.0",
     "@angular/animations": "^6.1.0",
     "@angular/cdk": "~7.0.3",
     "@angular/common": "^6.1.0",
