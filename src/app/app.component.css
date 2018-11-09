@@ -1,27 +1,19 @@
-router-outlet{
-  width: 100%;
-  display: grid;
-}
 app-header {
-  display: grid;
+  height: fit-content;
   box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
   background-color: #cf0b3c;
   transition: background-color 500ms linear;
-  animation: 1s ease-in-out 0ms 1 fadein;
   font-family: Diantha;
   font-size: 5vh;
-  text-align: center;
   color: white;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-
 }
 .mat-drawer-side {
   border-right: solid 0px rgba(0,0,0,0);
 }
 app-footer {
-  display: grid;
+  height: 5%;
+  width: 100%;
   box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
   background-color: #444444;
   transition: background-color 500ms linear;
@@ -30,21 +22,24 @@ app-footer {
   font-size: 4vh;
   text-align: center;
   color: white;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 mat-sidenav-container{
   height: 100%;
+  width: 100%;
 }
 mat-sidenav-content{
-  height: 100%;
-  display: grid;
-  grid-template-rows: 10% 75%  10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 mat-toolbar-row{
   display: inline-flex;
   vertical-align: middle;
+}
+.wrapper{
+  height: 85%;
+  width: 100%;
 }
 #side-nav{
   background-color: #cf0b3c;

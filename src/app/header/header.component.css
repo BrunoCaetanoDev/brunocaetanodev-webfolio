@@ -1,9 +1,21 @@
-#mainHeader {
-  display: grid;
-  grid-template-columns: 10% 80%;
+#header-toolbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #cf0b3c;
+}
+
+#menu-icon{
+  align-content: center;
+  justify-content: center;
+}
+
+#title{
   font-family: Diantha;
-  align-items: center;
-  text-align: center;
+  font-size: 8vh;
   color: transparent;
+  align-content: center;
+  text-align: center;
+  width: 90%;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;}
+  -webkit-text-stroke-color: white;
+}
