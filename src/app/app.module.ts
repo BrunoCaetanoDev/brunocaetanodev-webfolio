@@ -2,13 +2,35 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatGridListModule, MatIconModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
+import { HomeComponent } from './home/home.component';
+import { AppRouterModule } from './app-router.module';
+import { ProfileComponent } from './profile/profile.component';
+import { CareerComponent } from './career/career.component';
+import { TrainingComponent } from './training/training.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    ProfileComponent,
+    CareerComponent,
+    TrainingComponent
   ],
   imports: [
-    BrowserModule
+    MatToolbarModule,
+    MatGridListModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatButtonModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

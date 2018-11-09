@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+h1 {
+  color: #cf0b3c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+}
+body, input[type="text"], button {
+  color: #888;
+  font-family: Cambria, Georgia;
+}
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a{
+  color: inherit; /* blue colors for links too */
+  text-decoration: none;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.material-icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
