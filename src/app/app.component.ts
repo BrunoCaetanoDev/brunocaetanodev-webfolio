@@ -12,7 +12,7 @@ import {fadeAnimation} from '../animations';
   ]
 })
 export class AppComponent implements OnInit {
-  title = 'Web-Folio';
+
   isOpen = false;
 
   options = [
