@@ -3,3 +3,8 @@
   src: url(assets/fonts/Diantha.otf) format("opentype");
   src: url(assets/fonts/Diantha.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: BoringLesson;
+  src: url(assets/fonts/BoringLesson.ttf) format("truetype");
+}

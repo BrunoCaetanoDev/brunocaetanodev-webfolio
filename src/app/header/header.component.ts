@@ -11,8 +11,15 @@ export class HeaderComponent implements OnInit {
 
   constructor(private sideNavToggleService: SideNavToggleService) { }
 
+  icon = 'menu';
+
   toggleMenu() {
     this.sideNavToggleService.toggle();
+    if (this.sideNavToggleService.isOpen) {
+      this.icon = 'close';
+    } else {
+      this.icon = 'menu';
+    }
   }
 
   ngOnInit() {}
