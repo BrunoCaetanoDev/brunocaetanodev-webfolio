@@ -3,8 +3,28 @@
   background-color: #444444;
   transition: background-color 500ms linear;
   animation: 1s ease-in-out 0ms 1 fadein;
-  font-family: Diantha;
   font-size: 3.2rem;
+  display: flex;
+}
+
+#footer-message {
   text-align: center;
+  font-family: Diantha;
   color: white;
+  flex: 6;
+}
+
+#coffee-logo{
+  flex: 1;
+  vertical-align: middle !important;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+#github-logo {
+  flex: 1;
+  vertical-align: middle !important;
+  right: 3.5rem;
+  height: 1.6rem;
+  width: 1.6rem;
 }
