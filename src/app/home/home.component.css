@@ -1,3 +1,9 @@
+h1 {
+  font-family: BoringLesson;
+  font-size: 4.8rem;
+}
+
+
 /* The hero image */
 .home-image {
   height: 90vh;
