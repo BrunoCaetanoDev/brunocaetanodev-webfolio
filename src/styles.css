@@ -39,6 +39,14 @@ html {
   font-size: 62.5%;
 }
 
+.flip{
+  transition: all .2s ease-in-out;
+}
+.flip:hover {
+  transform: rotateX(360deg);
+}
+
+
 .grow {
   transition: all .2s ease-in-out;
 }
