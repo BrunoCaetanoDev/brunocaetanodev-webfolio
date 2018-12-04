@@ -13,8 +13,6 @@
 
 .footer-icon {
   flex: 1;
-  align-content: center;
-  justify-content: center;
   height: 2.4rem;
   width: 2.4rem;
 }
@@ -24,6 +22,10 @@
   font-family: Diantha;
   color: white;
   flex: 25;
+}
+
+#coffee-logo {
+  vertical-align: middle !important;
 }
 
 @media (max-width: 65rem) {
