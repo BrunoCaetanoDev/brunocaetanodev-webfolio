@@ -1,0 +1,10 @@
+.footer {
+  box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+  background-color: #444444;
+  transition: background-color 500ms linear;
+  animation: 1s ease-in-out 0ms 1 fadein;
+  font-family: Diantha;
+  font-size: 3.2rem;
+  text-align: center;
+  color: white;
+}
