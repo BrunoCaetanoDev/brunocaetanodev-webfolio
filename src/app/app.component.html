@@ -2,7 +2,7 @@
   <mat-sidenav id="side-nav" mode="open" [(opened)]="isOpen">
     <mat-toolbar id="side-toolbar">
       <mat-toolbar-row *ngFor="let option of options">
-        <a routerLink="/{{option.path}}" routerLinkActive="sidebar-selected-option"><span>{{option.name | titlecase}}</span>
+        <a routerLink="/{{option.path}}" routerLinkActive="sidebar-selected-option"><span id="route-option">{{option.name | titlecase}}</span>
           <mat-icon class="material-icons" id="option-icon">{{option.icon}}</mat-icon>
         </a>
       </mat-toolbar-row>
