@@ -9,7 +9,7 @@
   margin: 4.2rem 4.2rem;
   flex: 1;
   flex-shrink: 0;
-  overflow: hidden;
+  overflow: visible;
   align-self: center;
   justify-self: center;
 }
@@ -18,7 +18,7 @@
   margin: 1.2rem 4.2rem;
   align-self: stretch;
   justify-self: center;
-  overflow: scroll;
+  overflow-y: scroll;
   flex: 1.5;
   flex-shrink: 0;
 }
@@ -26,10 +26,15 @@
 #personal-info {
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
+
+
+.scrollable-content::-webkit-scrollbar * {
+  background:transparent;
+}
+
 
 .mat-card-title-holder {
   display: flex;
