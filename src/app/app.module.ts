@@ -5,7 +5,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCardModule, MatGridListModule, MatIconModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatDividerModule,
+  MatGridListModule,
+  MatIconModule,
+  MatSidenavModule,
+  MatToolbarModule
+} from '@angular/material';
 import { HomeComponent } from './home/home.component';
 import { AppRouterModule } from './app-router.module';
 import { ProfileComponent } from './profile/profile.component';
@@ -27,6 +35,7 @@ import { ContactInfoComponent } from './contact-info/contact-info.component';
   imports: [
     MatToolbarModule,
     MatCardModule,
+    MatDividerModule,
     MatGridListModule,
     MatIconModule,
     MatSidenavModule,
