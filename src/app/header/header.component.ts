@@ -20,16 +20,11 @@ export class HeaderComponent implements OnInit {
     });
   }
 
-  title = '';
+  title;
   icon = 'menu';
 
   toggleMenu() {
     this.sideNavToggleService.toggle();
-    if (this.sideNavToggleService.isOpen) {
-      this.icon = 'close';
-    } else {
-      this.icon = 'menu';
-    }
   }
 
   ngOnInit() {}

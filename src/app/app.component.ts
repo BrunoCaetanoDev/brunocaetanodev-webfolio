@@ -29,6 +29,12 @@ export class AppComponent implements OnInit {
     return outlet.isActivated ? outlet.activatedRoute : '';
   }
 
+  public toggleMenu(){
+    console.log(this.sideNavToggleService.isOpen)
+    this.sideNavToggleService.toggle();
+    console.log(this.sideNavToggleService.isOpen)
+  }
+
   ngOnInit() {
     this.sideNavToggleService.change.subscribe(isOpen => {
       this.isOpen = isOpen;
