@@ -1,9 +1,11 @@
 mat-sidenav-container{
   height: 100%;
   width: 100%;
+
 }
 mat-sidenav-content{
-  align-items: stretch;
+  display: flex;
+  flex-direction: column;
 }
 mat-toolbar-row{
   display: flex;
@@ -32,10 +34,14 @@ mat-toolbar-row{
   position: relative;
 }
 app-footer {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+#wrapper {
+  flex: 10;
+  align-self: stretch;
+  justify-self: stretch;
 }
 
 #route-option {

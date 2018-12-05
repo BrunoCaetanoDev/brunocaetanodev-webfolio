@@ -4,8 +4,8 @@ h1 {
 }
 
 /* The hero image */
-.home-image {
-  height: 90vh;
+.home-content {
+  height: 100%;
   /* Position and center the image to scale nicely on all screens */
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/home-background.jpg") no-repeat center;
   background-size: cover;

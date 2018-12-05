@@ -1,4 +1,18 @@
 .content-wrapper {
   display: flex;
-  height: 90vh;
+  flex-direction: column;
+  height: 100%;
 }
+
+#profile-info-card {
+  margin: 1rem 10rem 5rem;
+  align-self: stretch;
+  justify-self: stretch;
+  flex: 10;
+}
+
+#profile-title-card {
+  margin: 5rem 10rem 1rem;
+  flex: 1;
+}
+

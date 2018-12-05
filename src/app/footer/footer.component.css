@@ -32,7 +32,6 @@
   margin-right: 2.5rem;
 }
 
-
 @media (max-width: 65rem) {
   #github-logo {
     display: none;
