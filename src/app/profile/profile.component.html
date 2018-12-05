@@ -1,4 +1,15 @@
 <div class="flex-container-column">
-  <mat-card id="profile-title-card">Simple card</mat-card>
+  <mat-card id="profile-title-card">
+    <div class="flex-container-row">
+      <img id="profile-image" src="../../assets/images/{{profile.image}}" >
+      <div id="personal-info">
+        <h2>Name: {{profile.name}}</h2>
+        <h2> Surname: {{profile.surname}}</h2>
+        <h2>Day of Birth: {{profile.birthday}}</h2>
+        <h2>Birth Place: {{profile.birthplace}}</h2>
+        <h2>Nationality : {{profile.nationality}}</h2>
+      </div>
+    </div>
+  </mat-card>
   <mat-card id="profile-info-card">Not so Simple Card</mat-card>
 </div>
