@@ -5,7 +5,7 @@
   background-color: #444444;
   transition: background-color 500ms linear;
   animation: 1s ease-in-out 0ms 1 fadein;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
 .footer-icon {
@@ -18,7 +18,7 @@
   text-align: center;
   font-family: Diantha;
   color: white;
-  flex: 25;
+  flex: 23;
 }
 
 #coffee-logo {
@@ -26,7 +26,7 @@
 }
 
 #github-logo {
-  margin-right: 2.5rem;
+  margin-right: 2.4rem;
 }
 
 @media (max-width: 65rem) {

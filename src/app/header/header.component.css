@@ -2,15 +2,14 @@
   background-color: #cf0b3c;
 }
 
-#navbar-toggle-container {
-  flex: 1;
+#sidenav-toggle-container {
   align-self: center;
   justify-self: flex-start;
 }
 
 #title{
   flex: 23;
-  font-size: 4.2rem;
+  font-size: 3.2rem;
   color: white;
   align-self: center;
   justify-self: stretch;

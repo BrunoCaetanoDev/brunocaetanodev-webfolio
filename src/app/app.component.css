@@ -11,19 +11,19 @@ mat-toolbar-row{
   display: flex;
 }
 
-#side-nav{
+#sidenav{
   width: 20rem;
   background-color: #cf0b3c;
 }
-#side-toolbar{
+#sidenav-toolbar{
   background-color: transparent;
   color: #91082a;
 }
-.sidebar-selected-option {
+.sidenav-toolbar-selected-option {
   color: white;
 }
 
-.sidebar-option {
+.sidenav-toolbar-option {
   display: flex;
   justify-content: center;
 }
@@ -31,14 +31,13 @@ mat-toolbar-row{
 #option-icon{
   font-size: 2.4rem;
   vertical-align: middle !important;
-  position: relative;
 }
 app-footer {
   align-self: stretch;
   justify-self: stretch;
 }
 
-#wrapper {
+main {
   flex: 10;
   align-self: stretch;
   justify-self: stretch;
