@@ -23,16 +23,10 @@ export class AppComponent implements OnInit {
     {'name': 'contact', 'path': 'contact-info', 'icon': 'email'}
   ];
 
-  constructor(private sideNavToggleService: SideNavToggleService) { }
+  constructor(public sideNavToggleService: SideNavToggleService) { }
 
   public getRouterOutletState(outlet) {
     return outlet.isActivated ? outlet.activatedRoute : '';
-  }
-
-  public toggleMenu(){
-    console.log(this.sideNavToggleService.isOpen)
-    this.sideNavToggleService.toggle();
-    console.log(this.sideNavToggleService.isOpen)
   }
 
   ngOnInit() {

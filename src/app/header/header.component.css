@@ -2,17 +2,18 @@
   background-color: #cf0b3c;
 }
 
-#menu-icon{
-  align-content: center;
-  justify-content: center;
+#navbar-toggle-container {
+  flex: 1;
+  align-self: center;
+  justify-self: flex-start;
 }
 
 #title{
-  position: relative;
-  flex: 1;
+  flex: 23;
   font-size: 4.2rem;
   color: white;
-  align-content: center;
+  align-self: center;
+  justify-self: stretch;
   text-align: center;
   font-family: Righteous;
 }

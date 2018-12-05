@@ -4,15 +4,15 @@
   height: 100%;
 }
 
+#profile-title-card {
+  margin: 4.2rem 4.2rem 1.2rem;
+  flex: 1;
+}
+
 #profile-info-card {
-  margin: 1rem 10rem 5rem;
+  margin: 1.2rem 4.2rem;
   align-self: stretch;
   justify-self: stretch;
   flex: 10;
-}
-
-#profile-title-card {
-  margin: 5rem 10rem 1rem;
-  flex: 1;
 }
 

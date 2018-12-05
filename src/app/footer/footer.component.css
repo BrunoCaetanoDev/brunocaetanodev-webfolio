@@ -1,6 +1,4 @@
 .footer {
-  display: flex;
-  flex-direction: row;
   align-content: center;
   justify-content: center;
   box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
@@ -8,7 +6,6 @@
   transition: background-color 500ms linear;
   animation: 1s ease-in-out 0ms 1 fadein;
   font-size: 3.2rem;
-
 }
 
 .footer-icon {
