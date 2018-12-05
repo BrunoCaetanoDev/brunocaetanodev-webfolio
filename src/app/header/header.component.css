@@ -10,11 +10,9 @@
 #title{
   position: relative;
   flex: 1;
-  font-family: Diantha;
   font-size: 4.2rem;
-  color: transparent;
+  color: white;
   align-content: center;
   text-align: center;
-  -webkit-text-stroke-width: 0.1rem;
-  -webkit-text-stroke-color: white;
+  font-family: Righteous;
 }

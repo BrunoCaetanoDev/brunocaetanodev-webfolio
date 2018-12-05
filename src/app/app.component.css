@@ -6,8 +6,7 @@ mat-sidenav-content{
   align-items: stretch;
 }
 mat-toolbar-row{
-  vertical-align: middle;
-  display: inline-flex;
+  display: flex;
 }
 
 #side-nav{
@@ -21,6 +20,12 @@ mat-toolbar-row{
 .sidebar-selected-option {
   color: white;
 }
+
+.sidebar-option {
+  display: flex;
+  justify-content: center;
+}
+
 #option-icon{
   font-size: 2.4rem;
   vertical-align: middle !important;
@@ -34,6 +39,7 @@ app-footer {
 }
 
 #route-option {
+  padding: 1rem;
   vertical-align: middle !important;
   font-size: 2.4rem;
 }

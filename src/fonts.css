@@ -5,6 +5,17 @@
 }
 
 @font-face {
+  font-family: Junegull;
+  src: url(assets/fonts/Junegull.ttf) format("truetype");
+}
+
+
+@font-face {
   font-family: BoringLesson;
   src: url(assets/fonts/BoringLesson.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Righteous;
+  src: url(assets/fonts/Righteous-Regular.ttf) format("truetype");
 }
