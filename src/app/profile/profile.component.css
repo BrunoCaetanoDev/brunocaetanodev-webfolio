@@ -26,13 +26,13 @@
   margin-top: 2.4rem;
 }
 
+#story-info {
+  margin-left: 3.6rem;
+  margin-right: 3.6rem;
+}
 
 .info-container {
   margin: 1.2rem 2.4rem;
   align-self: stretch;
   flex-shrink: 1;
-}
-
-#personal-info {
-  flex-shrink: 2;
 }
