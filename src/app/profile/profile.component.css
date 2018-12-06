@@ -1,50 +1,38 @@
-.content-wrapper {
+.flex-item-column {
+  flex: 1;
+  align-self: center;
+}
+
+.flex-item-row {
+  flex: 1 0 0;
+  margin: 1.2rem;
+  align-self: center;
+}
+
+.flex-container-row {
   display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: scroll;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+  align-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 #profile-image {
-  margin: 4.2rem 4.2rem;
-  flex: 1;
-  flex-shrink: 0;
-  overflow: visible;
-  align-self: center;
-  justify-self: center;
+  max-height: 24rem;
+  max-width: 24rem;
 }
 
-#profile-info-card {
-  margin: 1.2rem 4.2rem;
+#profile-image-container {
+  margin-top: 2.4rem;
+}
+
+
+.info-container {
+  margin: 1.2rem 2.4rem;
   align-self: stretch;
-  justify-self: center;
-  overflow-y: scroll;
-  flex: 1.5;
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
 #personal-info {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  flex-shrink: 2;
 }
-
-
-.scrollable-content::-webkit-scrollbar * {
-  background:transparent;
-}
-
-
-.mat-card-title-holder {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex: 1;
-}
-
-mat-card-title {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.4rem;
-}
-

@@ -1,42 +1,39 @@
 <div class="flex-container-column">
-  <div id="profile-image">
-    <img src="../../assets/images/{{profile.image}}">
+  <div id="profile-image-container" class="flex-item-column">
+    <img id="profile-image" src="../../assets/images/{{profile.image}}">
   </div>
-  <mat-card id="profile-info-card">
-    <div id="personal-info">
-      <div class="mat-card-title-holder">
-        <mat-card-title>
-          <h3>Name {{profile.name}}</h3>
-        </mat-card-title>
-      </div>
-      <mat-divider [vertical]="true" [inset]="true"></mat-divider>
-      <div class="mat-card-title-holder">
-        <mat-card-title>
-          <h3>Surname: {{profile.surname}}</h3>
-        </mat-card-title>
-      </div>
-      <mat-divider [vertical]="true"></mat-divider>
-      <div class="mat-card-title-holder">
-        <mat-card-title>
-          <h3>Day of Birth: {{profile.birthday}}</h3>
-        </mat-card-title>
-      </div>
-      <mat-divider [vertical]="true"></mat-divider>
-      <div class="mat-card-title-holder">
-        <mat-card-title>
-          <h3>Birth Place: {{profile.birthplace}}</h3>
-        </mat-card-title>
-      </div>
-      <mat-divider [vertical]="true"></mat-divider>
-      <div class="mat-card-title-holder">
-        <mat-card-title>
-          <h3>Nationality : {{profile.nationality}}</h3>
-        </mat-card-title>
-      </div>
+  <div class="flex-item-column info-container">
+    <div id="personal-info" class="flex-container-row scrollable-flex">
+      <mat-card class="flex-item-row">
+        <h2>Name</h2>
+        <mat-divider [inset]="true"></mat-divider>
+        <h3>{{profile.name}}</h3>
+      </mat-card>
+      <mat-card class="flex-item-row">
+        <h2 class="flex-item">Surname</h2>
+        <mat-divider [inset]="true" class="flex-item"></mat-divider>
+        <h3 class="flex-item">{{profile.surname}}</h3>
+      </mat-card>
+      <mat-card class="flex-item-row">
+        <h2 class="flex-item">Day of Birth</h2>
+        <mat-divider [inset]="true" class="flex-item"></mat-divider>
+        <h3 class="flex-item">{{profile.birthday}}</h3>
+      </mat-card>
+      <mat-card class="flex-item-row">
+        <h2 class="flex-item">Birth Place</h2>
+        <mat-divider [inset]="true" class="flex-item"></mat-divider>
+        <h3 class="flex-item">{{profile.birthplace}}</h3>
+      </mat-card>
+      <mat-card class="flex-item-row">
+        <h2 class="flex-item">Nationality</h2>
+        <mat-divider [inset]="true" class="flex-item"></mat-divider>
+        <h3 class="flex-item">{{profile.nationality}}</h3>
+      </mat-card>
     </div>
-    <mat-divider></mat-divider>
-    <mat-card-content>
-      Here os a story all about how...
+  </div>
+  <mat-card class="flex-item-column info-container">
+    <mat-card-content id="">
+      Here I will write my epic tale about my uprising on the IT underworld!!! Nonetheless I feel lazy at the moment so lets leave this as a //TODO
     </mat-card-content>
   </mat-card>
 </div>
