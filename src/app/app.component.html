@@ -4,7 +4,7 @@
       <mat-toolbar-row class="sidenav-toolbar-option" *ngFor="let option of options">
         <a routerLink="/{{option.path}}" routerLinkActive="sidenav-toolbar-selected-option">
           <mat-icon class="material-icons" id="option-icon">{{option.icon}}</mat-icon>
-          <span id="route-option">{{option.name | titlecase}}</span>
+          <span id="route-option">{{option.name | translate |titlecase}}</span>
         </a>
       </mat-toolbar-row>
     </mat-toolbar>

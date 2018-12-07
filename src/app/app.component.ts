@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {SideNavToggleService} from './sidenav-toggle.service';
 import {fadeAnimation} from '../animations';
+import {TranslateService} from './translate.service';
 
 
 @Component({
@@ -20,10 +21,14 @@ export class AppComponent implements OnInit {
     {'name': 'profile', 'path': 'profile', 'icon': 'person'},
     {'name': 'career', 'path': 'career', 'icon': 'business_center'},
     {'name': 'training', 'path': 'training', 'icon': 'school'},
-    {'name': 'contact', 'path': 'contact-info', 'icon': 'email'}
+    {'name': 'contact', 'path': 'contact', 'icon': 'email'}
   ];
 
-  constructor(private sideNavToggleService: SideNavToggleService) { }
+  constructor(private sideNavToggleService: SideNavToggleService, private translate: TranslateService) { }
+
+  setLang(lang: string) {
+    this.translate.use(lang);
+  }
 
   public getRouterOutletState(outlet) {
     return outlet.isActivated ? outlet.activatedRoute : '';
