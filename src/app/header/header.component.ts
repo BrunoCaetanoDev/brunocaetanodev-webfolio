@@ -21,7 +21,8 @@ export class HeaderComponent implements OnInit {
   }
 
   title;
-  icon = 'menu';
+  menu_icon = 'menu';
+  language_icon = 'language'
 
   toggleMenu() {
     this.sideNavToggleService.toggle();

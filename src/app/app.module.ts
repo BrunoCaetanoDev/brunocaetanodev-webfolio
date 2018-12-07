@@ -10,7 +10,7 @@ import {
   MatCardModule,
   MatDividerModule,
   MatGridListModule,
-  MatIconModule,
+  MatIconModule, MatMenuModule,
   MatSidenavModule,
   MatToolbarModule
 } from '@angular/material';
@@ -35,6 +35,7 @@ import { ContactInfoComponent } from './contact-info/contact-info.component';
   imports: [
     MatToolbarModule,
     MatCardModule,
+    MatMenuModule,
     MatDividerModule,
     MatGridListModule,
     MatIconModule,

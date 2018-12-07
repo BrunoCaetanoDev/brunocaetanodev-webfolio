@@ -5,14 +5,36 @@
 #sidenav-toggle-container {
   align-self: center;
   justify-self: flex-start;
+  flex: 1;
+}
+
+#language-container {
+  align-self: center;
+  justify-self: flex-end;
+  flex: 1;
+  display: flex;
+  color: white;
+  justify-content: flex-end;
 }
 
 #title{
-  flex: 23;
+  flex: 3;
   font-size: 3.2rem;
   color: white;
   align-self: center;
   justify-self: stretch;
   text-align: center;
   font-family: Righteous;
+}
+
+.icon-sized {
+  height: 2.4rem;
+  width: 2.4rem;
+  opacity: 0.8;
+  margin-right: 1.2rem;
+  vertical-align: middle !important;
+}
+
+mat-menu-item {
+  display: flex;
 }
