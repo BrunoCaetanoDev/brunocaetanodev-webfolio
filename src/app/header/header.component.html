@@ -13,11 +13,15 @@
   <mat-menu #languageMenu="matMenu">
     <button mat-menu-item (click)="translateTo('en')">
       <img src="../../assets/images/british_flag.png" class="icon-sized">
-      <span>English</span>
+      <span>{{"ENGLISH" | translate | titlecase }}</span>
     </button>
     <button mat-menu-item (click)="translateTo('pt')">
       <img src="../../assets/images/portuguese_flag.png" class="icon-sized">
-      <span>Portuguese</span>
+      <span>{{"PORTUGUESE" | translate | titlecase }}</span>
+    </button>
+    <button mat-menu-item (click)="translateTo('es')">
+      <img src="../../assets/images/spain_flag.png" class="icon-sized">
+      <span>{{"SPANISH" | translate | titlecase }}</span>
     </button>
   </mat-menu>
 

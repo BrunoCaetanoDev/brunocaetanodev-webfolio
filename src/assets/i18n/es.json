@@ -1,0 +1,23 @@
+{
+  "HOME TITLE": "Hola soy bruno",
+  "HOME SUBTITLE": "Y soy programador",
+  "HOME HIRE BTN": "Contratame",
+  "ENGLISH": "inglés",
+  "PORTUGUESE": "portugués",
+  "SPANISH": "español",
+  "home": "inicio",
+  "profile": "perfil",
+  "career": "carrera",
+  "training": "formácion",
+  "contact": "contacto",
+  "PROFILE NAME TAG": "nombre",
+  "PROFILE SURNAME TAG": "apellido",
+  "PROFILE BIRTHDAY TAG": "cumpleaños",
+  "PROFILE HOMETOWN TAG": "ciudad natal",
+  "PROFILE NATIONALITY TAG": "nacionalidad",
+  "PROFILE BIRTHDAY VALUE": "15 Noviembre",
+  "PROFILE NATIONALITY VALUE": "portuguesa",
+  "PROFILE EPILOGUE": "Aquí escribiré mi historia épica sobre mi levantamiento en el inframundo de TI. No obstante, me siento perezoso en este momento, así que dejemos esto como un // TODO",
+  "FOOTER 1": "Hecho con ",
+  "FOOTER 2": " por Bruno Caetano"
+}
