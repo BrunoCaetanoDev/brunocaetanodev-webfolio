@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: 'profile', component: ProfileComponent,  data: {animation: 'AnimatedPage'} },
   {path: 'career', component: CareerComponent,  data: {animation: 'AnimatedPage'} },
   {path: 'training', component: TrainingComponent,  data: {animation: 'AnimatedPage'} },
-  {path: 'contact-info', component: ContactInfoComponent, data: {animation: 'AnimatedPage'} },
+  {path: 'contact', component: ContactInfoComponent, data: {animation: 'AnimatedPage'} },
   {path: '**', redirectTo: 'home', pathMatch: 'full'},
 ];
 
