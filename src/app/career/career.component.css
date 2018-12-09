@@ -7,16 +7,15 @@ body {
   background-color: #474e5d;
   font-family: Helvetica, sans-serif;
 }
-
-#career-container {
-  width: 100%;
-}
-
 /* The actual timeline (the vertical ruler) */
 .timeline {
+  flex: 1;
   position: relative;
-  max-width: 1200px;
-  margin: 64px auto;
+  margin: 24px 12px;
+}
+
+#career-container {
+  align-items: stretch;
 }
 
 /* The actual timeline (the vertical ruler) */
