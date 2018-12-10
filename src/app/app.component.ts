@@ -44,6 +44,12 @@ export class AppComponent implements OnInit {
     });
   }
 
+  onSwipeRight($event) {
+    if(!this.isOpen) {
+      this.sideNavToggleService.toggle();
+    }
+  }
+
 }
 
 
