@@ -11,8 +11,8 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <app-header></app-header>
-    <main [@fadeAnimation]="getRouterOutletState(outlet)"  (swiperight)="onSwipeRight($event)">
-      <router-outlet #outlet="outlet"></router-outlet>
+    <main [@fadeAnimation]="getRouterOutletState(outlet)" (swiperight)="onSwipeRight($event)">
+      <router-outlet #outlet="outlet" ></router-outlet>
     </main>
     <app-footer></app-footer>
   </mat-sidenav-content>
