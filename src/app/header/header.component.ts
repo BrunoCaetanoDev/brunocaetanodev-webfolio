@@ -1,8 +1,8 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import { Location } from '@angular/common';
-import {SideNavToggleService} from '../sidenav-toggle.service';
+import {SideNavToggleService} from '../navigation/sidenav-toggle.service';
 import { Router } from '@angular/router';
-import {TranslateService} from '../translate.service';
+import {TranslateService} from '../translate/service/translate.service';
 
 @Component({
   selector: 'app-header',

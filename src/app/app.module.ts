@@ -9,23 +9,15 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import {
-  MatButtonModule,
-  MatCardModule,
-  MatDividerModule,
-  MatGridListModule,
-  MatIconModule, MatMenuModule,
-  MatSidenavModule,
-  MatToolbarModule
-} from '@angular/material';
 import { HomeComponent } from './home/home.component';
-import { AppRouterModule } from './app-router.module';
+import { AppRouterModule } from './routing/app-router.module';
 import { ProfileComponent } from './profile/profile.component';
 import { CareerComponent } from './career/career.component';
 import { TrainingComponent } from './training/training.component';
 import { ContactInfoComponent } from './contact-info/contact-info.component';
-import {TranslateService} from './translate.service';
-import { TranslatePipe } from './translate.pipe';
+import {TranslateService} from './translate/service/translate.service';
+import { TranslatePipe } from './translate/pipe/translate.pipe';
+import {MaterialModule} from './material/material.module';
 
 
 export class MyHammerConfig extends HammerGestureConfig {
@@ -56,14 +48,7 @@ export function setupTranslateFactory(
     TranslatePipe
   ],
   imports: [
-    MatToolbarModule,
-    MatCardModule,
-    MatMenuModule,
-    MatDividerModule,
-    MatGridListModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatButtonModule,
+    MaterialModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRouterModule,

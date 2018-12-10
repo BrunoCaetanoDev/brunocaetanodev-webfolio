@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {SideNavToggleService} from './sidenav-toggle.service';
+import {SideNavToggleService} from './navigation/sidenav-toggle.service';
 import {fadeAnimation} from '../animations';
-import {TranslateService} from './translate.service';
+import {TranslateService} from './translate/service/translate.service';
 
 
 @Component({
