@@ -9,9 +9,12 @@
 }
 
 .footer-icon {
-  flex: 1;
   height: 2.4rem;
   width: 2.4rem;
+}
+
+.round-icon {
+  border-radius: 2.5rem;
 }
 
 #footer-message {
@@ -25,12 +28,16 @@
   vertical-align: middle !important;
 }
 
-#github-logo {
+#linkedin-logo {
+  margin-left: 0.8rem;
+}
+
+#social-media-container{
   margin-right: 2.4rem;
 }
 
 @media (max-width: 65rem) {
-  #github-logo {
+  #social-media-container {
     display: none;
   }
 }

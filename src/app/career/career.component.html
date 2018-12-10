@@ -1,24 +1,10 @@
 <div id="career-container" class="flex-container-column">
   <div class="timeline flex-item-column">
-    <div class="container right celfocus">
+    <div *ngFor="let project of projects; let i = index" class="container" [class]="getClass(project.client)" [ngClass]="{'left': i%2===0, 'right': i%2!==0}" >
       <div class="content">
-        <h2>{{'SEPTEMBER' | translate}} 2018</h2>
-        <h3>Celfocus - Consumer IoT</h3>
-        <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in molestie orci. Maecenas in sagittis leo, ut auctor ante. Maecenas aliquam lorem lectus, eget viverra nisi facilisis ac. Curabitur nisl tortor, lobortis vitae porta non, maximus sit amet turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In eu quam quis dolor imperdiet fringilla eu id lacus. Aenean risus sem, vulputate vitae porta nec, maximus vel magna. Nam maximus scelerisque nunc a luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque gravida, enim sit amet sollicitudin tempor, lectus ligula dapibus risus, sed aliquam augue urna id mi. Pellentesque fringilla ex vitae tincidunt malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque dignissim non eros sit amet elementum. Phasellus faucibus odio et tellus volutpat porttitor.</p>
-      </div>
-    </div>
-    <div class="container left timwe">
-      <div class="content">
-        <h2>{{'FEBRUARY' | translate}} 2017</h2>
-        <h3>Timwe Group - B2C </h3>
-        <p class="hidden">Fusce sagittis metus ex, a porta odio condimentum at. Etiam scelerisque non elit in vulputate. Phasellus pretium elementum nunc a hendrerit. Ut tortor augue, tincidunt dapibus molestie vitae, imperdiet at quam. Aliquam et est feugiat, pharetra odio et, fringilla est. Suspendisse pharetra mauris nunc, et gravida risus malesuada eget. Donec ut tempus dolor. Duis cursus pulvinar laoreet. Aenean sit amet vehicula nisi, id tempus turpis. Nulla lectus dolor, blandit quis molestie in, consequat sed metus. Nunc vel enim nulla. Duis eu purus urna. </p>
-      </div>
-    </div>
-    <div class="container right bee">
-      <div class="content">
-        <h2>{{'SEPTEMBER' | translate }} 2016</h2>
-        <h3>Bee Engineering - Bee Academy</h3>
-        <p class="hidden">Suspendisse pulvinar ex in hendrerit tincidunt. Sed a magna aliquet, rutrum ipsum nec, consectetur ipsum. Quisque imperdiet euismod mauris sed pretium. Vivamus facilisis quis mi at blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed finibus tellus nec leo venenatis, a aliquam turpis bibendum. Pellentesque condimentum neque felis, vel pellentesque neque sagittis non. Curabitur auctor tellus urna, nec bibendum mauris tristique id. Phasellus porttitor ultrices ligula et vulputate. Sed pellentesque enim ornare tempus tempus. Quisque eu dictum nisl, sed blandit dolor. Donec euismod nisi vel diam egestas maximus. In pulvinar consectetur pulvinar. Integer congue magna in urna cursus finibus. Phasellus imperdiet erat bibendum, pulvinar ligula eu, fermentum odio. </p>
+        <h2>{{project.startMonth | translate}} {{project.startYear}}</h2>
+        <h3>{{project.client}} - {{project.department}}</h3>
+        <p class="hidden">{{project.description}}
       </div>
     </div>
   </div>
