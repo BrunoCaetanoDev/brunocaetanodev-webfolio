@@ -4,6 +4,8 @@ mat-sidenav-container{
 
 }
 mat-sidenav-content{
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -50,7 +52,7 @@ main {
   flex: 1;
   justify-self: center;
   align-self: stretch;
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 #route-option {
