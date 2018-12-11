@@ -46,8 +46,7 @@ app-footer {
 }
 
 main {
-  flex: 1 0 auto;
-  justify-self: center;
+  flex: 1 1 auto;
   align-self: stretch;
   overflow-y: scroll;
 }
