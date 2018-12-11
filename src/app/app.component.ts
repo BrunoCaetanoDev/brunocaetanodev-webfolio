@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {SideNavToggleService} from './navigation/sidenav-toggle.service';
-import {fadeAnimation} from '../animations';
+import {fadeAnimation, slideInAnimation} from '../animations';
 import {TranslateService} from './translate/service/translate.service';
 
 
@@ -9,7 +9,8 @@ import {TranslateService} from './translate/service/translate.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   animations: [
-    fadeAnimation
+    fadeAnimation,
+    slideInAnimation
   ]
 })
 export class AppComponent implements OnInit {
