@@ -5,8 +5,10 @@ mat-sidenav-container{
 }
 mat-sidenav-content{
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
 }
+
 mat-toolbar-row{
   display: flex;
 }
@@ -34,19 +36,16 @@ mat-toolbar-row{
 }
 
 app-header {
-  align-self: stretch;
-  justify-self: stretch;
+
 }
 
 app-footer {
-  align-self: stretch;
-  justify-self: stretch;
+  flex-shrink: 0;
 }
 
 main {
-  flex: 10;
-  align-self: stretch;
-  justify-self: stretch;
+  flex: 1;
+  overflow-y: scroll;
 }
 
 #route-option {
