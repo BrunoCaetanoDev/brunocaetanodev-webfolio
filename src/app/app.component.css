@@ -36,16 +36,22 @@ mat-toolbar-row{
 }
 
 app-header {
+  justify-self: flex-start;
+  align-self: stretch;
   flex-shrink: 0;
 }
 
 app-footer {
+  justify-self: flex-end;
+  align-self: stretch;
   flex-shrink: 0;
 }
 
 main {
   flex: 1;
-  overflow-y: scroll;
+  justify-self: center;
+  align-self: stretch;
+  overflow: auto;
 }
 
 #route-option {
