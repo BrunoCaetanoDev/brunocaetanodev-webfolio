@@ -36,11 +36,11 @@ mat-toolbar-row{
 }
 
 app-header {
-
+  flex-shrink: 0;
 }
 
 app-footer {
-
+  flex-shrink: 0;
 }
 
 main {
