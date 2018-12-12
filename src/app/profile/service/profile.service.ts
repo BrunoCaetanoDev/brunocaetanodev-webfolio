@@ -12,7 +12,7 @@ export class ProfileService {
       this._profile = new Profile();
       this._profile.name = "Bruno";
       this._profile.surname = "Caetano";
-      this._profile.image = "profile.png";
+      this._profile.image = "https://res.cloudinary.com/dnku44rpm/image/upload/v1544614965/profile.png";
       this._profile.birthday = "15 November";
       this._profile.birthplace= "Sintra";
       this._profile.nationality= "Portuguese";

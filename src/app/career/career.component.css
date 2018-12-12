@@ -143,19 +143,19 @@ body {
 
 
 .bee::after {
-  background-image: url("../../assets/images/bee-eng.png");
+  background-image: url("https://res.cloudinary.com/dnku44rpm/image/upload/v1544614964/bee-eng.png");
   background-size: contain;
 
 }
 
 
 .timwe::after {
-  background-image: url("../../assets/images/timwe.png");
-  background-size: cover;
+  background-image: url("https://res.cloudinary.com/dnku44rpm/image/upload/v1544614968/timwe.png");
+  background-size: contain;
 }
 
 .celfocus::after {
-  background-image: url("../../assets/images/celfocus.png");
+  background-image: url("https://res.cloudinary.com/dnku44rpm/image/upload/v1544614964/celfocus.png");
   background-size: contain;
 
 
