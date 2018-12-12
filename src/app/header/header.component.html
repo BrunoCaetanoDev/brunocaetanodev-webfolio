@@ -1,7 +1,7 @@
 <mat-toolbar id="header-toolbar" class="flex-container-row">
   <div id="sidenav-toggle-container">
     <button mat-icon-button [disableRipple]="true" onClick="this.blur()"id="menu-icon" (click)="toggleMenu()">
-    <mat-icon class="white-icon">{{menu_icon}}</mat-icon>
+      <mat-icon class="white-icon">{{menu_icon}}</mat-icon>
     </button>
   </div>
   <div id="title">{{title | translate | titlecase}}</div>
@@ -24,6 +24,4 @@
       <span>{{"SPANISH" | translate | titlecase }}</span>
     </button>
   </mat-menu>
-
-
 </mat-toolbar>

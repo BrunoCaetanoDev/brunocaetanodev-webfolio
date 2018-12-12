@@ -22,5 +22,12 @@
   "FOOTER 2": " by Bruno Caetano",
   "SEPTEMBER": "September",
   "FEBRUARY": "February",
-  "JULY": "July"
+  "JULY": "July",
+  "STEPPER EMAIL ADDRESS": "Enter email address",
+  "STEPPER EMAIL SUBJECT": "Enter email subject",
+  "STEPPER EMAIL BODY": "Enter email body",
+  "STEPPER EMAIL SEND": "Send email",
+  "SEND": "Send",
+  "NEXT": "Next",
+  "BACK": "Back"
 }

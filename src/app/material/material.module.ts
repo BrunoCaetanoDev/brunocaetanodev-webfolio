@@ -5,12 +5,16 @@ import {
   MatButtonModule,
   MatCardModule,
   MatDividerModule,
+  MatFormFieldModule,
   MatGridListModule,
-  MatIconModule,
+  MatIconModule, MatInputModule,
   MatMenuModule,
   MatSidenavModule,
+  MatStepperModule,
   MatToolbarModule
 } from '@angular/material';
+
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -22,6 +26,10 @@ import {
     MatMenuModule,
     MatDividerModule,
     MatGridListModule,
+    MatStepperModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule,
     MatIconModule,
     MatSidenavModule,
     MatButtonModule
@@ -32,6 +40,10 @@ import {
     MatMenuModule,
     MatDividerModule,
     MatGridListModule,
+    MatStepperModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule,
     MatIconModule,
     MatSidenavModule,
     MatButtonModule

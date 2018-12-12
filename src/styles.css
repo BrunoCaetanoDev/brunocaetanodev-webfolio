@@ -41,6 +41,7 @@ html, body, app-root {
 }
 
 .flex-container-column {
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
