@@ -43,6 +43,7 @@ app-footer {
 
 main {
   flex: 1 1 auto;
+  height: 100%;
   position: relative;/* need this to position inner content */
   overflow-y: auto;
 }

@@ -1,5 +1,5 @@
 <mat-sidenav-container>
-  <mat-sidenav id="sidenav" mode="open" (click)="toggleMenu()" [(opened)]="isOpen" onclick="this.blur()">
+  <mat-sidenav id="sidenav" mode="open" (click)="toggleMenu()" [(opened)]="isOpen">
     <mat-toolbar id="sidenav-toolbar">
       <mat-toolbar-row class="sidenav-toolbar-option" *ngFor="let option of options">
         <a routerLink="/{{option.path}}" routerLinkActive="sidenav-toolbar-selected-option">
