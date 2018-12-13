@@ -2,9 +2,9 @@
   <mat-vertical-stepper id="email-sender-stepper" class="flex-item-column" linear #stepper>
     <mat-step [stepControl]="firstFormGroup">
       <form [formGroup]="firstFormGroup">
-        <ng-template matStepLabel>{{'STEPPER EMAIL ADDRESS' | translate }}</ng-template>
+        <ng-template matStepLabel>{{'STEPPER CONTACT NAME' | translate }}</ng-template>
         <mat-form-field>
-          <input matInput placeholder="{{'STEPPER EMAIL ADDRESS' | translate}}" formControlName="firstCtrl" required [email]="true">
+          <input matInput placeholder="{{'STEPPER CONTACT NAME' | translate}}" formControlName="firstCtrl" required>
         </mat-form-field>
         <div class="flex-container-row">
           <button mat-button matStepperNext class="stepper-btn">{{'NEXT' | translate }}</button>
@@ -13,9 +13,9 @@
     </mat-step>
     <mat-step [stepControl]="secondFormGroup">
       <form [formGroup]="secondFormGroup">
-        <ng-template matStepLabel>{{'STEPPER EMAIL SUBJECT' | translate }}</ng-template>
+        <ng-template matStepLabel>{{'STEPPER COMPANY NAME' | translate }}</ng-template>
         <mat-form-field>
-          <input matInput placeholder="{{'STEPPER EMAIL SUBJECT' | translate}}" formControlName="secondCtrl">
+          <input matInput placeholder="{{'STEPPER COMPANY NAME' | translate}}" formControlName="secondCtrl" required>
         </mat-form-field>
         <div class="flex-container-row">
           <button mat-button matStepperPrevious class="stepper-btn">{{'BACK' | translate }}</button>
@@ -25,9 +25,21 @@
     </mat-step>
     <mat-step [stepControl]="thirdFormGroup">
       <form [formGroup]="thirdFormGroup">
+        <ng-template matStepLabel>{{'STEPPER EMAIL SUBJECT' | translate }}</ng-template>
+        <mat-form-field>
+          <input matInput placeholder="{{'STEPPER EMAIL SUBJECT' | translate}}" formControlName="thirdCtrl" required>
+        </mat-form-field>
+        <div class="flex-container-row">
+          <button mat-button matStepperPrevious class="stepper-btn">{{'BACK' | translate }}</button>
+          <button mat-button matStepperNext class="stepper-btn">{{'NEXT' | translate }}</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="fourthFormGroup">
+      <form [formGroup]="fourthFormGroup">
         <ng-template matStepLabel>{{'STEPPER EMAIL BODY' | translate }}</ng-template>
         <mat-form-field>
-          <textarea matInput placeholder="{{'STEPPER EMAIL BODY' | translate}}" formControlName="thirdCtrl" required></textarea>
+          <textarea matInput placeholder="{{'STEPPER EMAIL BODY' | translate}}" formControlName="fourthCtrl" required></textarea>
         </mat-form-field>
         <div class="flex-container-row">
           <button mat-button matStepperPrevious class="stepper-btn">{{'BACK' | translate }}</button>

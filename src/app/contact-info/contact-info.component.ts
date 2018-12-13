@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {Email} from '../email/email';
+import {EmailService} from '../email/model/email.service';
 
 
 @Component({
@@ -12,12 +14,13 @@ export class ContactInfoComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
   thirdFormGroup: FormGroup;
+  fourthFormGroup: FormGroup;
 
-  constructor(private _formBuilder: FormBuilder) { }
+  constructor(private _formBuilder: FormBuilder, private _emailService : EmailService) { }
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
-      firstCtrl: ['', Validators.compose([Validators.required, Validators.email]) ]
+      firstCtrl: ['', Validators.required]
     });
     this.secondFormGroup = this._formBuilder.group({
       secondCtrl: ['', Validators.required]
@@ -25,9 +28,17 @@ export class ContactInfoComponent implements OnInit {
     this.thirdFormGroup = this._formBuilder.group({
       thirdCtrl: ['', Validators.required]
     });
+    this.fourthFormGroup = this._formBuilder.group({
+      fourthCtrl: ['', Validators.required]
+    });
   }
 
   sendEmail() {
-
+    let email = new Email();
+    email.name = this.firstFormGroup.value.firstCtrl;
+    email.company = this.secondFormGroup.value.secondCtrl;
+    email.subject = this.thirdFormGroup.value.thirdCtrl;
+    email.body = this.fourthFormGroup.value.fourthCtrl;
+    this._emailService.sendEmail(email);
   }
 }
