@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import {Email} from '../email/email';
-import {EmailService} from '../email/model/email.service';
+import {Email} from '../email/model/email';
+import {EmailService} from '../email/service/email.service';
 
 
 @Component({
@@ -16,7 +16,7 @@ export class ContactInfoComponent implements OnInit {
   thirdFormGroup: FormGroup;
   fourthFormGroup: FormGroup;
 
-  constructor(private _formBuilder: FormBuilder, private _emailService : EmailService) { }
+  constructor(private _formBuilder: FormBuilder, private _emailService: EmailService) { }
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({

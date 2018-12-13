@@ -1,9 +1,9 @@
 export class Email {
 
-  private _name : string;
-  private _company : string;
-  private _subject : string;
-  private _body : string;
+  private _name: string;
+  private _company: string;
+  private _subject: string;
+  private _body: string;
 
   get name(): string {
     return this._name;
@@ -39,10 +39,10 @@ export class Email {
 
   toJSON() {
     return {
-      "name": this._name,
-      "company": this._company,
-      "subject": this._subject,
-      "body": this._body,
+      'name': this._name,
+      'company': this._company,
+      'subject': this._subject,
+      'body': this._body,
     };
   }
 
