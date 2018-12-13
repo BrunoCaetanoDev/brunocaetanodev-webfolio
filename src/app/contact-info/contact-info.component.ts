@@ -34,7 +34,7 @@ export class ContactInfoComponent implements OnInit {
   }
 
   sendEmail() {
-    let email = new Email();
+    const email = new Email();
     email.name = this.firstFormGroup.value.firstCtrl;
     email.company = this.secondFormGroup.value.secondCtrl;
     email.subject = this.thirdFormGroup.value.thirdCtrl;

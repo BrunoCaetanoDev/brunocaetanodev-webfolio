@@ -9,14 +9,12 @@ import {ProfileService} from './service/profile.service';
 })
 export class ProfileComponent implements OnInit {
 
-  public profile : Profile;
-  private profileService : ProfileService;
+  public profile: Profile;
+
+  constructor(private _profileService: ProfileService) { }
 
   ngOnInit() {
-    this.profile = this.profileService.profile;
+    this.profile = this._profileService.profile;
   }
 
-  constructor(profileService: ProfileService) {
-    this.profileService = profileService;
-  }
 }

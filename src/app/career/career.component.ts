@@ -9,14 +9,12 @@ import {ProjectService} from './service/project.service';
 })
 export class CareerComponent implements OnInit {
 
-  public projects : Project [];
-  private _projectService;
+  public projects: Project [];
 
-  constructor(projectService : ProjectService) {
-    this._projectService = projectService;
+  constructor(private _projectService: ProjectService) {
   }
 
-  getClass(key : string) : string {
+  getClass(key: string): string {
     return key.split(' ')[0].toLowerCase();
   }
 
