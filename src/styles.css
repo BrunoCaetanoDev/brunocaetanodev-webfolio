@@ -70,5 +70,13 @@ html, body, app-root {
 
 .mat-progress-spinner circle, .mat-spinner circle {
   margin: 1.2rem;
-  stroke: #91082a!important;
+  stroke: #444444!important;
+}
+
+.mat-focused .mat-form-field-label {
+  color: #444444 !important;
+}
+
+.mat-form-field-ripple {
+  background-color: #444444 !important;
 }
