@@ -54,6 +54,7 @@
         <button mat-button id="submit-btn" class="stepper-btn" (click)="sendEmail()">{{'SEND' | translate }}</button>
         <button mat-button (click)="stepper.reset()" class="stepper-btn">Reset</button>
       </div>
+      <mat-progress-spinner id="email-process-spinner" mode="indeterminate" *ngIf="show"></mat-progress-spinner>
     </mat-step>
   </mat-vertical-stepper>
 </div>

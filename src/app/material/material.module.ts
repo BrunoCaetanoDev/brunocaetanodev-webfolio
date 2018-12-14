@@ -8,7 +8,7 @@ import {
   MatFormFieldModule,
   MatGridListModule,
   MatIconModule, MatInputModule,
-  MatMenuModule,
+  MatMenuModule, MatProgressSpinnerModule,
   MatSidenavModule,
   MatStepperModule,
   MatToolbarModule
@@ -32,6 +32,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     MatIconModule,
     MatSidenavModule,
+    MatProgressSpinnerModule,
     MatButtonModule
   ],
   exports: [
@@ -46,6 +47,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     MatIconModule,
     MatSidenavModule,
+    MatProgressSpinnerModule,
     MatButtonModule
   ],
   declarations: []

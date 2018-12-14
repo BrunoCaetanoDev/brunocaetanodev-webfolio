@@ -15,8 +15,13 @@ export class ContactInfoComponent implements OnInit {
   secondFormGroup: FormGroup;
   thirdFormGroup: FormGroup;
   fourthFormGroup: FormGroup;
+  show: boolean;
 
-  constructor(private _formBuilder: FormBuilder, private _emailService: EmailService) { }
+  constructor(private _formBuilder: FormBuilder, private _emailService: EmailService) {
+    _emailService.done.subscribe((done: boolean) => {
+      this.show = !done;
+    });
+  }
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
@@ -34,6 +39,7 @@ export class ContactInfoComponent implements OnInit {
   }
 
   sendEmail() {
+    this.show = true;
     const email = new Email();
     email.name = this.firstFormGroup.value.firstCtrl;
     email.company = this.secondFormGroup.value.secondCtrl;

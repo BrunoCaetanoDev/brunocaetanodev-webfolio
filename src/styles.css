@@ -67,3 +67,8 @@ html, body, app-root {
 .grow:hover {
   transform: scale(1.1);
 }
+
+.mat-progress-spinner circle, .mat-spinner circle {
+  margin: 1.2rem;
+  stroke: #91082a!important;
+}
