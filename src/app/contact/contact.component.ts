@@ -6,10 +6,10 @@ import {EmailService} from '../email/service/email.service';
 
 @Component({
   selector: 'app-contact-info',
-  templateUrl: './contact-info.component.html',
-  styleUrls: ['./contact-info.component.css']
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css']
 })
-export class ContactInfoComponent implements OnInit {
+export class ContactComponent implements OnInit {
 
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
@@ -39,7 +39,6 @@ export class ContactInfoComponent implements OnInit {
   }
 
   sendEmail() {
-    this.show = true;
     const email = new Email();
     email.name = this.firstFormGroup.value.firstCtrl;
     email.company = this.secondFormGroup.value.secondCtrl;

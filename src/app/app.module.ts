@@ -14,7 +14,7 @@ import { AppRouterModule } from './routing/app-router.module';
 import { ProfileComponent } from './profile/profile.component';
 import { CareerComponent } from './career/career.component';
 import { TrainingComponent } from './training/training.component';
-import { ContactInfoComponent } from './contact-info/contact-info.component';
+import { ContactComponent } from './contact/contact.component';
 import {TranslateService} from './translate/service/translate.service';
 import { TranslatePipe } from './translate/pipe/translate.pipe';
 import {MaterialModule} from './material/material.module';
@@ -44,7 +44,7 @@ export function setupTranslateFactory(
     ProfileComponent,
     CareerComponent,
     TrainingComponent,
-    ContactInfoComponent,
+    ContactComponent,
     TranslatePipe
   ],
   imports: [

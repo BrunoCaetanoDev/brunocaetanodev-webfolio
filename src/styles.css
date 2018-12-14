@@ -70,7 +70,7 @@ html, body, app-root {
 
 .mat-progress-spinner circle, .mat-spinner circle {
   margin: 1.2rem;
-  stroke: #444444!important;
+  stroke: #91082a!important;
 }
 
 .mat-focused .mat-form-field-label {

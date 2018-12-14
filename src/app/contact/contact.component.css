@@ -19,17 +19,19 @@
 #submit-btn {
   background-color: #cf0b3c;
   color: white;
-}
-
-.stepper-btn {
-  margin-top: 0.4rem;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
 }
 
 .flex-container-row {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
-#email-process-spinner {
-  margin: 3.2rem;
+.m-margin-top {
+  margin-top: 2.4rem;
+}
+
+.s-margin-top {
+  margin-top: 1.6rem;
 }

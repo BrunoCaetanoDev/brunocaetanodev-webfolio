@@ -5,7 +5,7 @@ import {HomeComponent} from '../home/home.component';
 import {ProfileComponent} from '../profile/profile.component';
 import {CareerComponent} from '../career/career.component';
 import {TrainingComponent} from '../training/training.component';
-import {ContactInfoComponent} from '../contact-info/contact-info.component';
+import {ContactComponent} from '../contact/contact.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: 'profile', component: ProfileComponent,  data: {animation: 'AnimatedPage'} },
   {path: 'career', component: CareerComponent,  data: {animation: 'AnimatedPage'} },
   {path: 'training', component: TrainingComponent,  data: {animation: 'AnimatedPage'} },
-  {path: 'contact', component: ContactInfoComponent, data: {animation: 'AnimatedPage'} },
+  {path: 'contact', component: ContactComponent, data: {animation: 'AnimatedPage'} },
   {path: '**', redirectTo: 'home', pathMatch: 'full'},
 ];
 
