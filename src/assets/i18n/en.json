@@ -30,5 +30,7 @@
   "STEPPER EMAIL SEND": "Send email",
   "SEND": "Send",
   "NEXT": "Next",
-  "BACK": "Back"
+  "BACK": "Back",
+  "EMAIL SUCCESS": "Your email has been sent. Thank you, I intend to reply as soon as possible.",
+  "EMAIL FAILURE": "Your email was not sent. Please make sure to reattempt at another time."
 }

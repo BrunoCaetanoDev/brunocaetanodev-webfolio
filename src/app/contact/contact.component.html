@@ -51,10 +51,14 @@
       <ng-template matStepLabel>{{'STEPPER EMAIL SEND' | translate }}</ng-template>
       <div class="flex-container-row s-margin-top">
         <button mat-button matStepperPrevious class="stepper-btn">{{'BACK' | translate }}</button>
-        <button mat-button id="submit-btn" class="stepper-btn" (click)="sendEmail()">{{'SEND' | translate }}</button>
+        <button mat-button id="submit-btn" class="stepper-btn" (click)="sendEmail()" [disabled]="disableBtn">{{'SEND' | translate }}</button>
         <button mat-button (click)="stepper.reset()" class="stepper-btn">Reset</button>
       </div>
-      <mat-progress-spinner class="m-margin-top" mode="indeterminate" *ngIf="show"></mat-progress-spinner>
+      <div class="flex-container-row m-margin-top flex-container-center">
+      <mat-progress-spinner id="progressSpinner" mode="indeterminate" *ngIf="showProgressSpinner"></mat-progress-spinner>
+      </div>
+      <div class="flex-container-row m-margin-top flex-container-center" *ngIf="showMessage && success">{{ 'EMAIL SUCCESS' | translate }}</div>
+      <div class="flex-container-row m-margin-top flex-container-center" *ngIf="showMessage && !success">{{ 'EMAIL FAILURE' | translate}}</div>
     </mat-step>
   </mat-vertical-stepper>
 </div>

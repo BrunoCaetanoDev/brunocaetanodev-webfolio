@@ -11,6 +11,7 @@ import {Subject} from 'rxjs';
 export class EmailService {
 
   private _done = new Subject<boolean>();
+  private _success: boolean;
 
   constructor(private http: HttpClient) { }
 
@@ -18,14 +19,12 @@ export class EmailService {
     return this._done;
   }
 
-  set done(value: Subject<boolean>) {
-    this._done = value;
+  get success(): boolean {
+    return this._success;
   }
 
   public sendEmail (email: Email) {
     this.done.next(false);
-    console.log(email.toJSON());
-
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type':  'application/json'
@@ -33,12 +32,17 @@ export class EmailService {
     };
 
     this.http.post(environment.nodemailer_url, email, httpOptions).subscribe(resp => {
-        console.log(resp);
         this.done.next(true);
       },
       error => {
-        console.log(error);
         this.done.next(true);
+        if (error.status === 200) {
+          this._success = true;
+          this.done.next(true);
+        } else {
+          this._success = false;
+          this.done.next(true);
+        }
       }
     );
   }

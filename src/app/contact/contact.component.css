@@ -35,3 +35,8 @@
 .s-margin-top {
   margin-top: 1.6rem;
 }
+
+.flex-container-center {
+  align-items: center;
+  justify-content: center;
+}

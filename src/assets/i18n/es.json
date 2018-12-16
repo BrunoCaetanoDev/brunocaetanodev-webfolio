@@ -30,5 +30,7 @@
   "STEPPER EMAIL SEND": "Enviar email",
   "SEND": "Enviar",
   "NEXT": "Siguiente",
-  "BACK": "Retrocider"
+  "BACK": "Retrocider",
+  "EMAIL SUCCESS": "Tu email ha sido enviado. Gracias, tengo la intención de responder lo antes posible.",
+  "EMAIL FAILURE": "Tu email no fue enviado. Por favor, asegúrese de volver a intentarlo en otro momento."
 }

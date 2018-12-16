@@ -15,11 +15,22 @@ export class ContactComponent implements OnInit {
   secondFormGroup: FormGroup;
   thirdFormGroup: FormGroup;
   fourthFormGroup: FormGroup;
-  show: boolean;
+  showProgressSpinner: boolean;
+  showMessage: boolean;
+  success: boolean;
+  disableBtn: boolean;
 
   constructor(private _formBuilder: FormBuilder, private _emailService: EmailService) {
     _emailService.done.subscribe((done: boolean) => {
-      this.show = !done;
+      this.showProgressSpinner = !done;
+      if (done) {
+        this.success = this._emailService.success;
+        this.showMessage = true;
+        setTimeout(() => {
+          this.showMessage = false;
+          this.disableBtn = false;
+        }, 5000);
+      }
     });
   }
 
@@ -36,6 +47,9 @@ export class ContactComponent implements OnInit {
     this.fourthFormGroup = this._formBuilder.group({
       fourthCtrl: ['', Validators.required]
     });
+    this.showProgressSpinner = false;
+    this.showMessage = false;
+    this.disableBtn = false;
   }
 
   sendEmail() {
@@ -44,6 +58,7 @@ export class ContactComponent implements OnInit {
     email.company = this.secondFormGroup.value.secondCtrl;
     email.subject = this.thirdFormGroup.value.thirdCtrl;
     email.body = this.fourthFormGroup.value.fourthCtrl;
+    this.disableBtn = true;
     this._emailService.sendEmail(email);
   }
 }
