@@ -18,6 +18,8 @@ import { ContactComponent } from './contact/contact.component';
 import {TranslateService} from './translate/service/translate.service';
 import { TranslatePipe } from './translate/pipe/translate.pipe';
 import {MaterialModule} from './material/material.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 export class MyHammerConfig extends HammerGestureConfig {
@@ -52,7 +54,8 @@ export function setupTranslateFactory(
     BrowserModule,
     BrowserAnimationsModule,
     AppRouterModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     TranslateService, {
