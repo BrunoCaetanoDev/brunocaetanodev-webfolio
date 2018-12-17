@@ -10,6 +10,11 @@
   justify-content: space-evenly;
 }
 
+.chip-container {
+  margin: 1.2rem;
+  justify-content: space-evenly;
+}
+
 #skill-logo {
   height: 12rem;
   width: 12rem;

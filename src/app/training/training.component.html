@@ -1,3 +1,8 @@
+<div class="flex-container-row chip-container">
+  <mat-chip-list>
+  <mat-chip *ngFor="let skillCategory of skillCategories">{{skillCategory | titlecase}}</mat-chip>
+  </mat-chip-list>
+</div>
 <div class="flex-container-row">
   <mat-card class="flex-item-row flex-container-column skill-card" *ngFor="let skill of skills" (click)="toggleDescriptionRender(skill.name)">
     <mat-card-title>{{skill.name | titlecase }}</mat-card-title>

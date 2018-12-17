@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import {
   MatButtonModule,
-  MatCardModule,
+  MatCardModule, MatChipsModule,
   MatDividerModule,
   MatFormFieldModule,
   MatGridListModule,
@@ -48,7 +48,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatSidenavModule,
     MatProgressSpinnerModule,
-    MatButtonModule
+    MatButtonModule,
+    MatChipsModule
   ],
   declarations: []
 })

@@ -12,13 +12,16 @@ export class TrainingComponent implements OnInit {
   skills: Skill[];
   shouldShow: boolean[];
   private maxStars: number;
+  skillCategories: Set<string>;
 
   constructor(private _skillsService: SkillService) {
     this.skills = _skillsService.skills;
     this.shouldShow = [];
     this.maxStars = 5;
+    this.skillCategories = new Set<string>();
     for (let skill of this.skills ) {
       this.shouldShow[skill.name] = false;
+      this.addSkill(skill.type);
     }
   }
 
@@ -29,6 +32,12 @@ export class TrainingComponent implements OnInit {
     console.log(this.shouldShow[name]);
     this.shouldShow[name] = !this.shouldShow[name];
   };
+
+  public addSkill(skills: string[]){
+    for(let skill of skills){
+      this.skillCategories.add(skill);
+    }
+  }
 
   public arrayFilled(score: number) : any []{
 
@@ -43,4 +52,5 @@ export class TrainingComponent implements OnInit {
     }
     return tempArray;
   }
+
 }
