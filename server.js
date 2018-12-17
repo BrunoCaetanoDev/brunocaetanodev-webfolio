@@ -1,11 +1,14 @@
 //Install express server
 const express = require('express');
 const path = require('path');
+const enforce = require('express-sslify');
+
 
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/dist/bruno-caetano-devfolio'));
+app.use(enforce.HTTPS())
+  .use(express.static(__dirname + '/dist/bruno-caetano-devfolio'));
 
 app.get('/*', function(req,res) {
 
