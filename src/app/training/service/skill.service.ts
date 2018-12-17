@@ -24,7 +24,6 @@ export class SkillService {
     angular.type=['frontend','typescript','framework'];
 
     let angularJs = new Skill();
-
     angularJs.name='angular js';
     angularJs.description=' Integer pretium laoreet ultrices. Donec laoreet ipsum nunc, ac vulputate nulla condimentum quis. Sed vitae orci eu lorem tempus faucibus at at metus. Mauris tincidunt velit in massa tempus maximus. Maecenas fermentum pharetra purus, id consectetur turpis. Proin ut eros metus. Vestibulum fringilla sagittis ipsum, vitae maximus massa porttitor condimentum. Aliquam interdum purus ipsum, eu lacinia sapien luctus vel. Aenean ac varius enim, in volutpat erat. Sed imperdiet dignissim orci eget accumsan. Sed viverra nunc vel tristique vestibulum. Maecenas ligula justo, rutrum quis ex ac, ornare iaculis elit. Curabitur rhoncus purus sed risus tristique, nec aliquam sem molestie. Nullam at dignissim nisi.\n' +
       '\n' +
@@ -33,9 +32,26 @@ export class SkillService {
     angularJs.score=3;
     angularJs.type=['frontend','javascript','framework'];
 
+    let docker = new Skill();
+    docker.name='docker';
+    docker.description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius risus et fermentum vulputate. Nulla vel vehicula quam. Phasellus leo risus, pretium vel magna sed, luctus luctus purus. Aenean nec euismod mauris, sit amet placerat velit. Nulla facilisi. Etiam rutrum scelerisque augue at lobortis. Integer eget congue dui. Curabitur ac erat lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus.';
+    docker.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545066739/docker-logo.png';
+    docker.score=3;
+    docker.type=['continuous integration','continuous delivery','dev-ops'];
+
+    let jenkins = new Skill();
+    jenkins.name='jenkins';
+    jenkins.description='Sed elementum ligula sit amet fringilla bibendum. Aliquam tristique ipsum sit amet lobortis malesuada. Pellentesque ornare ipsum eget purus tempor blandit. In fringilla purus pharetra massa pellentesque, ut lacinia dolor suscipit. Curabitur porta lacus massa. Maecenas faucibus nec dolor non pretium. Fusce vel urna enim. Praesent vestibulum nunc ex, id porttitor ante bibendum quis. Nulla in malesuada orci. Duis eu mauris erat. Integer id tincidunt velit, sit amet ornare quam.';
+    jenkins.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545066738/jenkins-logo.png';
+    jenkins.score=3;
+    jenkins.type=['continuous integration','continuous delivery','dev-ops'];
+
     this._skills.push(springBoot);
     this._skills.push(angular);
     this._skills.push(angularJs);
+    this._skills.push(docker);
+    this._skills.push(jenkins);
+
   }
 
   get skills(): Skill[] {
