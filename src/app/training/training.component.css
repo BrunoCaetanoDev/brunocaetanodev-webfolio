@@ -19,8 +19,10 @@
   display: flex;
 }
 
-.hidden { display:none; }
-
-.skill-card:hover .hidden {
+.show {
   display: block;
+}
+
+.hide {
+  display: none;
 }

@@ -1,7 +1,13 @@
 <div class="flex-container-row">
-  <mat-card class="flex-item-row flex-container-column skill-card" *ngFor="let skill of skills">
+  <mat-card class="flex-item-row flex-container-column skill-card" *ngFor="let skill of skills" (click)="toggleDescriptionRender(skill.name)">
     <mat-card-title>{{skill.name | titlecase }}</mat-card-title>
     <img id="skill-logo" src="{{skill.image}}" alt="technology logotype">
-    <p class="hidden">{{skill.description}}</p>
+    <div class="flex-container-row">
+      <h2 *ngFor="let star of arrayFilled(skill.score)">
+        <i class="fa fa-star" *ngIf="star"></i>
+        <i class="fa fa-star-o" *ngIf="!star"></i>
+      </h2>
+    </div>
+    <p [ngClass]="{show: shouldShow[skill.name], hide: !shouldShow[skill.name]}">{{skill.description}}</p>
   </mat-card>
 </div>
