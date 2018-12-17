@@ -48,7 +48,6 @@ html, body, app-root {
 
 .flex-container-row {
   display: flex;
-  height: 100%;
   width: 100%;
   flex-direction: row;
 }
