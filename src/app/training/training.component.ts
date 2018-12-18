@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {SkillService} from './service/skill.service';
 import {Skill} from './model/skill';
+import {MatChip} from '@angular/material';
 
 @Component({
   selector: 'app-training',
@@ -10,39 +11,40 @@ import {Skill} from './model/skill';
 export class TrainingComponent implements OnInit {
 
   skills: Skill[];
-  shouldShow: boolean[];
-  private maxStars: number;
+  renderSkillDescription: boolean[];
+  private readonly maxStars: number;
   skillCategories: Set<string>;
+  skillCategoryFilter: string[];
+
 
   constructor(private _skillsService: SkillService) {
     this.skills = _skillsService.skills;
-    this.shouldShow = [];
-    this.maxStars = 5;
     this.skillCategories = new Set<string>();
+    this.renderSkillDescription = [];
+    this.skillCategoryFilter = [];
+    this.maxStars = 5;
     for (let skill of this.skills ) {
-      this.shouldShow[skill.name] = false;
-      this.addSkill(skill.type);
+      this.renderSkillDescription[skill.name] = false;
+      this.addSkill(skill.category);
     }
   }
 
   ngOnInit() {
   }
 
-  public toggleDescriptionRender(name: string) {
-    console.log(this.shouldShow[name]);
-    this.shouldShow[name] = !this.shouldShow[name];
+  private toggleDescriptionRender(name: string) {
+    console.log(this.renderSkillDescription[name]);
+    this.renderSkillDescription[name] = !this.renderSkillDescription[name];
   };
 
-  public addSkill(skills: string[]){
+  private addSkill(skills: string[]){
     for(let skill of skills){
       this.skillCategories.add(skill);
     }
   }
 
-  public arrayFilled(score: number) : any []{
-
+  private arrayFilled(score: number) : any []{
     let tempArray = [];
-
     for(let i = 1; i <= this.maxStars; i++) {
       if(i <= score) {
         tempArray.push(true);
@@ -53,4 +55,23 @@ export class TrainingComponent implements OnInit {
     return tempArray;
   }
 
+  private applyFilter(skillCategories: string[]): boolean {
+    if(this.skillCategoryFilter.length === 0) {
+      return true;
+    }
+    for(let skillCategory of skillCategories) {
+      if(this.skillCategoryFilter.indexOf(skillCategory) !== -1) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  private toggleCategorySelection(skillCategory: string, categoryChip: MatChip) {
+    console.log(  categoryChip.selected);
+    categoryChip.selected = !categoryChip.selected;
+    console.log(  categoryChip.selected);
+    let index = this.skillCategoryFilter.indexOf(skillCategory);
+    index !== -1 ? this.skillCategoryFilter.splice(index, 1) : this.skillCategoryFilter.push(skillCategory);
+  }
 }

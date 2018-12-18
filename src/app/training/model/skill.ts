@@ -1,7 +1,7 @@
 export class Skill {
 
   private _name :string;
-  private _type : string[];
+  private _category : string[];
   private _description :string;
   private _score :number;
   private _image :string;
@@ -14,12 +14,12 @@ export class Skill {
     this._name = value;
   }
 
-  get type(): string[] {
-    return this._type;
+  get category(): string[] {
+    return this._category;
   }
 
-  set type(value: string[]) {
-    this._type = value;
+  set category(value: string[]) {
+    this._category = value;
   }
 
   get description(): string {

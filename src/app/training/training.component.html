@@ -1,10 +1,11 @@
 <div class="flex-container-row chip-container">
-  <mat-chip-list>
-  <mat-chip *ngFor="let skillCategory of skillCategories">{{skillCategory | titlecase}}</mat-chip>
+  <mat-chip-list >
+  <mat-chip #categoryChip selected="false" [ngClass]="{'colorChip' : categoryChip.selected}" *ngFor="let skillCategory of skillCategories"  (click)="toggleCategorySelection(skillCategory, categoryChip)">{{skillCategory | titlecase}}</mat-chip>
   </mat-chip-list>
 </div>
 <div class="flex-container-row">
-  <mat-card class="flex-item-row flex-container-column skill-card" *ngFor="let skill of skills" (click)="toggleDescriptionRender(skill.name)">
+  <div class="flex-item-row flex-container-column" *ngFor="let skill of skills">
+  <mat-card ngClass="flex-container-column skill-card" (click)="toggleDescriptionRender(skill.name)" *ngIf="applyFilter(skill.category)">
     <mat-card-title>{{skill.name | titlecase }}</mat-card-title>
     <img id="skill-logo" src="{{skill.image}}" alt="technology logotype">
     <div class="flex-container-row">
@@ -13,6 +14,7 @@
         <i class="fa fa-star-o" *ngIf="!star"></i>
       </h2>
     </div>
-    <p [ngClass]="{show: shouldShow[skill.name], hide: !shouldShow[skill.name]}">{{skill.description}}</p>
+    <p [ngClass]="{show: renderSkillDescription[skill.name], hide: !renderSkillDescription[skill.name]}">{{skill.description}}</p>
   </mat-card>
+  </div>
 </div>
