@@ -68,9 +68,7 @@ export class TrainingComponent implements OnInit {
   }
 
   private toggleCategorySelection(skillCategory: string, categoryChip: MatChip) {
-    console.log(  categoryChip.selected);
     categoryChip.selected = !categoryChip.selected;
-    console.log(  categoryChip.selected);
     let index = this.skillCategoryFilter.indexOf(skillCategory);
     index !== -1 ? this.skillCategoryFilter.splice(index, 1) : this.skillCategoryFilter.push(skillCategory);
   }
