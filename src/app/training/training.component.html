@@ -10,8 +10,7 @@
     <img id="skill-logo" src="{{skill.image}}" alt="technology logotype">
     <div class="flex-container-row">
       <h2 *ngFor="let star of arrayFilled(skill.score)">
-        <i class="fa fa-star" *ngIf="star"></i>
-        <i class="fa fa-star-o" *ngIf="!star"></i>
+        <i class="fa" [ngClass]="{'fa-star' : star==='full', 'fa-star-half-o': star==='half', 'fa-star-o': star==='empty'}"></i>
       </h2>
     </div>
     <p [ngClass]="{show: renderSkillDescription[skill.name], hide: !renderSkillDescription[skill.name]}">{{skill.description}}</p>

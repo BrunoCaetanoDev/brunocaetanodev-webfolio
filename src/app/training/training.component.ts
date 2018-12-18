@@ -47,9 +47,12 @@ export class TrainingComponent implements OnInit {
     let tempArray = [];
     for(let i = 1; i <= this.maxStars; i++) {
       if(i <= score) {
-        tempArray.push(true);
+        tempArray.push('full');
+      }
+      else if (i > score && (i - score ) < 1) {
+        tempArray.push('half');
       } else  {
-        tempArray.push(false)
+        tempArray.push('empty');
       }
     }
     return tempArray;

@@ -36,7 +36,7 @@ export class SkillService {
     docker.name='docker';
     docker.description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius risus et fermentum vulputate. Nulla vel vehicula quam. Phasellus leo risus, pretium vel magna sed, luctus luctus purus. Aenean nec euismod mauris, sit amet placerat velit. Nulla facilisi. Etiam rutrum scelerisque augue at lobortis. Integer eget congue dui. Curabitur ac erat lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus.';
     docker.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545068930/docker-logo.png';
-    docker.score=3;
+    docker.score=3.5;
     docker.category=['continuous integration','continuous delivery','dev-ops'];
 
     let jenkins = new Skill();
