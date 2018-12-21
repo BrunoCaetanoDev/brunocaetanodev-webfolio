@@ -11,7 +11,6 @@ app.use(forceSsl);
 app.use(express.static(__dirname + '/dist/bruno-caetano-devfolio'));
 
 app.get('/*', function(req,res) {
-
   res.sendFile(path.join(__dirname+'/dist/bruno-caetano-devfolio/index.html'));
 });
 

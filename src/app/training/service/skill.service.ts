@@ -46,11 +46,35 @@ export class SkillService {
     jenkins.score=3;
     jenkins.category=['continuous integration','continuous delivery','dev-ops'];
 
+    let redis = new Skill();
+    redis.name='redis';
+    redis.description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis placerat ipsum. Ut rhoncus posuere condimentum. Nunc ante elit, tincidunt sed urna vel, egestas efficitur arcu. Cras volutpat augue odio, ut viverra ligula tempor a. Fusce nisi massa, bibendum sit amet gravida at, lacinia id tellus. Ut bibendum tempor purus et vulputate. In eget lectus vitae libero dignissim ultrices quis a sem. Sed vitae suscipit erat. Morbi posuere sit amet neque vitae condimentum. Mauris pulvinar arcu non est dictum ultricies eget eget velit. Donec porta dolor massa, eu pharetra lorem aliquet id. Nulla maximus at eros et tristique. Maecenas vel convallis leo. Nullam ut convallis ex, id auctor sem.';
+    redis.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545408597/redis-logo.png';
+    redis.score=3;
+    redis.category=['no sql', 'non-relational database', 'message broker'];
+
+    let git = new Skill();
+    git.name='GIT';
+    git.description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis placerat ipsum. Ut rhoncus posuere condimentum. Nunc ante elit, tincidunt sed urna vel, egestas efficitur arcu. Cras volutpat augue odio, ut viverra ligula tempor a. Fusce nisi massa, bibendum sit amet gravida at, lacinia id tellus. Ut bibendum tempor purus et vulputate. In eget lectus vitae libero dignissim ultrices quis a sem. Sed vitae suscipit erat. Morbi posuere sit amet neque vitae condimentum. Mauris pulvinar arcu non est dictum ultricies eget eget velit. Donec porta dolor massa, eu pharetra lorem aliquet id. Nulla maximus at eros et tristique. Maecenas vel convallis leo. Nullam ut convallis ex, id auctor sem.';
+    git.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545409864/git.png';
+    git.score=3;
+    git.category=['VCS'];
+
+    let svn = new Skill();
+    svn.name='GIT';
+    svn.description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis placerat ipsum. Ut rhoncus posuere condimentum. Nunc ante elit, tincidunt sed urna vel, egestas efficitur arcu. Cras volutpat augue odio, ut viverra ligula tempor a. Fusce nisi massa, bibendum sit amet gravida at, lacinia id tellus. Ut bibendum tempor purus et vulputate. In eget lectus vitae libero dignissim ultrices quis a sem. Sed vitae suscipit erat. Morbi posuere sit amet neque vitae condimentum. Mauris pulvinar arcu non est dictum ultricies eget eget velit. Donec porta dolor massa, eu pharetra lorem aliquet id. Nulla maximus at eros et tristique. Maecenas vel convallis leo. Nullam ut convallis ex, id auctor sem.';
+    svn.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545410176/svn.png';
+    svn.score=3;
+    svn.category=['VCS'];
+
     this._skills.push(springBoot);
     this._skills.push(angular);
     this._skills.push(angularJs);
     this._skills.push(docker);
     this._skills.push(jenkins);
+    this._skills.push(redis);
+    this._skills.push(git);
+    this._skills.push(svn);
 
   }
 
