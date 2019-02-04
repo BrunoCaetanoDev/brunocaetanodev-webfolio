@@ -61,7 +61,7 @@ export class SkillService {
     git.category=['VCS'];
 
     let svn = new Skill();
-    svn.name='GIT';
+    svn.name='SVN';
     svn.description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis placerat ipsum. Ut rhoncus posuere condimentum. Nunc ante elit, tincidunt sed urna vel, egestas efficitur arcu. Cras volutpat augue odio, ut viverra ligula tempor a. Fusce nisi massa, bibendum sit amet gravida at, lacinia id tellus. Ut bibendum tempor purus et vulputate. In eget lectus vitae libero dignissim ultrices quis a sem. Sed vitae suscipit erat. Morbi posuere sit amet neque vitae condimentum. Mauris pulvinar arcu non est dictum ultricies eget eget velit. Donec porta dolor massa, eu pharetra lorem aliquet id. Nulla maximus at eros et tristique. Maecenas vel convallis leo. Nullam ut convallis ex, id auctor sem.';
     svn.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545410176/svn.png';
     svn.score=3;
