@@ -8,7 +8,7 @@ h1 {
 /* The hero image */
 .home-content {
   /* Position and center the image to scale nicely on all screens */
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dnku44rpm/image/upload/v1544614966/home-background.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dnku44rpm/image/upload/e_grayscale/v1550246676/webdev.jpg") no-repeat center;
   background-size: cover;
   min-height: 100%;
   height: auto !important;

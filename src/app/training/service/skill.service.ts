@@ -11,14 +11,14 @@ export class SkillService {
   constructor() {
     let springBoot = new Skill();
     springBoot.name='spring boot';
-    springBoot.description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia dignissim facilisis. Proin posuere a enim eget lacinia. Cras eu metus fermentum erat sollicitudin feugiat. Aliquam ultrices felis ut ornare mollis. Donec eget tellus tincidunt, auctor turpis non, elementum mi. Aliquam cursus quis dolor vitae mollis. Aliquam mattis hendrerit faucibus. Suspendisse faucibus non odio et pulvinar. Etiam vel fermentum lorem, vel fermentum elit. Phasellus egestas nibh id est accumsan faucibus. Etiam porttitor sapien elit, at hendrerit arcu semper eget. Vivamus eu condimentum arcu, eu tempus neque. Morbi id finibus purus, nec hendrerit ligula. Suspendisse non dolor vulputate, semper diam eu, varius orci.';
+    springBoot.description='Framework for JAVA backend application development. The framework allows to easily bootstrap a standalone SPRING application, providing a wide range of features though the seemingly effortless third-party software integration, all while maintaining an model-view-controller layout.';
     springBoot.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545048191/spring-boot-logo.png';
     springBoot.score=4;
     springBoot.category=['backend','java','framework'];
 
     let angular = new Skill();
     angular.name='angular';
-    angular.description='Proin vel sem sodales, egestas justo nec, consequat dui. Aenean mollis scelerisque tempor. Donec interdum maximus risus, ac pellentesque dui tristique id. Cras commodo orci sit amet lorem gravida, vel pellentesque elit cursus. Donec rhoncus dolor ut mollis venenatis. Integer lacinia cursus nisi viverra lobortis. Nunc porttitor, eros sit amet semper dapibus, mi justo pulvinar lectus, nec dignissim mi tellus vel nulla. Ut vitae nibh nunc. Morbi vitae purus non metus laoreet convallis at a tellus. Fusce sed volutpat augue. Vestibulum lacinia maximus vehicula. Donec finibus quam pellentesque hendrerit bibendum. Fusce quam nibh, vehicula vitae leo in, consequat dignissim ligula. Aliquam consequat pulvinar ex at fermentum. Donec augue purus, scelerisque cursus odio quis, laoreet molestie purus. Cras eu risus leo. ';
+    angular.description='Angular is a cross-platform application development framework that supports modern application development for the web, mobile, or desktop environments. The Framework consists of an redesigned and enhanced version of Angular JS its core and new features have been completely redesigned using Typescript.';
     angular.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545048191/angular-logo.png';
     angular.score=4;
     angular.category=['frontend','typescript','framework'];
@@ -34,7 +34,7 @@ export class SkillService {
 
     let docker = new Skill();
     docker.name='docker';
-    docker.description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius risus et fermentum vulputate. Nulla vel vehicula quam. Phasellus leo risus, pretium vel magna sed, luctus luctus purus. Aenean nec euismod mauris, sit amet placerat velit. Nulla facilisi. Etiam rutrum scelerisque augue at lobortis. Integer eget congue dui. Curabitur ac erat lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus.';
+    docker.description='A enterprise-ready container platform that enables a quick and efficient .';
     docker.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545068930/docker-logo.png';
     docker.score=3.5;
     docker.category=['continuous integration','continuous delivery','dev-ops'];
