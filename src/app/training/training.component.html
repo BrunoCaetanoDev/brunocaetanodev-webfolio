@@ -1,6 +1,6 @@
 <div class="flex-container-row chip-container">
   <mat-chip-list >
-  <mat-chip #categoryChip selected="false" [ngClass]="{'colorChip' : categoryChip.selected}" *ngFor="let skillCategory of skillCategories"  (click)="toggleCategorySelection(skillCategory, categoryChip)">{{skillCategory | titlecase}}</mat-chip>
+  <mat-chip #categoryChip selected="false" [ngClass]="{'colorChip' : categoryChip.selected}" *ngFor="let skillCategory of skillCategories"  (click)="toggleCategorySelection(skillCategory, categoryChip)">{{skillCategory | uppercase}}</mat-chip>
   </mat-chip-list>
 </div>
 <div class="flex-container-row">

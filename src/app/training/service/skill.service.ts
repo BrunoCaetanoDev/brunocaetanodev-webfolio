@@ -37,21 +37,21 @@ export class SkillService {
     docker.description='A enterprise-ready container platform that enables a quick and efficient .';
     docker.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545068930/docker-logo.png';
     docker.score=3.5;
-    docker.category=['continuous integration','continuous delivery','dev-ops'];
+    docker.category=['CI&CD','dev-ops'];
 
     let jenkins = new Skill();
     jenkins.name='jenkins';
     jenkins.description='Sed elementum ligula sit amet fringilla bibendum. Aliquam tristique ipsum sit amet lobortis malesuada. Pellentesque ornare ipsum eget purus tempor blandit. In fringilla purus pharetra massa pellentesque, ut lacinia dolor suscipit. Curabitur porta lacus massa. Maecenas faucibus nec dolor non pretium. Fusce vel urna enim. Praesent vestibulum nunc ex, id porttitor ante bibendum quis. Nulla in malesuada orci. Duis eu mauris erat. Integer id tincidunt velit, sit amet ornare quam.';
     jenkins.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545066738/jenkins-logo.png';
     jenkins.score=3;
-    jenkins.category=['continuous integration','continuous delivery','dev-ops'];
+    jenkins.category=['CI&CD','dev-ops'];
 
     let redis = new Skill();
     redis.name='redis';
     redis.description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis placerat ipsum. Ut rhoncus posuere condimentum. Nunc ante elit, tincidunt sed urna vel, egestas efficitur arcu. Cras volutpat augue odio, ut viverra ligula tempor a. Fusce nisi massa, bibendum sit amet gravida at, lacinia id tellus. Ut bibendum tempor purus et vulputate. In eget lectus vitae libero dignissim ultrices quis a sem. Sed vitae suscipit erat. Morbi posuere sit amet neque vitae condimentum. Mauris pulvinar arcu non est dictum ultricies eget eget velit. Donec porta dolor massa, eu pharetra lorem aliquet id. Nulla maximus at eros et tristique. Maecenas vel convallis leo. Nullam ut convallis ex, id auctor sem.';
     redis.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545408597/redis-logo.png';
     redis.score=3;
-    redis.category=['no sql', 'non-relational database', 'message broker'];
+    redis.category=['no sql', 'non relational database', 'database', 'message broker'];
 
     let git = new Skill();
     git.name='GIT';
@@ -67,6 +67,20 @@ export class SkillService {
     svn.score=3;
     svn.category=['VCS'];
 
+    let mysql = new Skill();
+    mysql.name='MYSQL';
+    mysql.description='asdas';
+    mysql.image='https://res.cloudinary.com/dnku44rpm/image/upload/c_crop,w_1611/v1556362549/mysql-db.svg';
+    mysql.score=4;
+    mysql.category=['database', 'sql', 'relational database'];
+
+    let oracledb = new Skill();
+    oracledb.name='Oracle DB';
+    oracledb.description='asdas';
+    oracledb.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1556362833/oracle-data-replication-hvr-146768.png';
+    oracledb.score=4;
+    oracledb.category=['database', 'sql', 'relational database'];
+
     this._skills.push(springBoot);
     this._skills.push(angular);
     this._skills.push(angularJs);
@@ -75,7 +89,8 @@ export class SkillService {
     this._skills.push(redis);
     this._skills.push(git);
     this._skills.push(svn);
-
+    this._skills.push(mysql);
+    this._skills.push(oracledb);
   }
 
   get skills(): Skill[] {
