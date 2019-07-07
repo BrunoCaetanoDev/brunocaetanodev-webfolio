@@ -1,6 +1,6 @@
 {
   "name": "bruno-caetano-devfolio",
-  "version": "0.0.0",
+  "version": "1.0.2",
   "scripts": {
     "ng": "ng",
     "postinstall": "ng build --aot --prod --buildOptimizer",
