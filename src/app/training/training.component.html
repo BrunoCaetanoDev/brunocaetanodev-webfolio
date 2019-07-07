@@ -13,7 +13,7 @@
         <i class="fa" [ngClass]="{'fa-star' : star==='full', 'fa-star-half-o': star==='half', 'fa-star-o': star==='empty'}"></i>
       </h2>
     </div>
-    <p [ngClass]="{show: renderSkillDescription[skill.name], hide: !renderSkillDescription[skill.name]}">{{skill.description}}</p>
+    <p [ngClass]="{show: renderSkillDescription[skill.name], hide: !renderSkillDescription[skill.name]}">{{skill.description | translate}}</p>
   </mat-card>
   </div>
 </div>
