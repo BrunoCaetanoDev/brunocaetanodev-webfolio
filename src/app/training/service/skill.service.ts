@@ -44,6 +44,14 @@ export class SkillService {
     jenkins.score=3;
     jenkins.category=['CI&CD','dev-ops'];
 
+    let mongo = new Skill();
+    mongo.name='mongo';
+    mongo.description='MONGO_DESCRIPTION';
+    mongo.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1573510346/1_DiNIG4Bfpm65_wwXf_JwMA.png';
+    mongo.score=3;
+    mongo.category=['no sql', 'non relational database', 'database'];
+
+
     let redis = new Skill();
     redis.name='redis';
     redis.description='REDIS_DESCRIPTION';
@@ -85,6 +93,7 @@ export class SkillService {
     this._skills.push(docker);
     this._skills.push(jenkins);
     this._skills.push(redis);
+    this._skills.push(mongo);
     this._skills.push(git);
     this._skills.push(svn);
     this._skills.push(mysql);
