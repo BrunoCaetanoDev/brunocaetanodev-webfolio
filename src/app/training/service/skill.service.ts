@@ -13,14 +13,14 @@ export class SkillService {
     springBoot.name='spring boot';
     springBoot.description='SPRING_DESCRIPTION';
     springBoot.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545048191/spring-boot-logo.png';
-    springBoot.score=4;
+    springBoot.score=4.5;
     springBoot.category=['backend','java','framework'];
 
     let angular = new Skill();
     angular.name='angular';
     angular.description='ANGULAR_DESCRIPTION';
     angular.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545048191/angular-logo.png';
-    angular.score=4;
+    angular.score=3.5;
     angular.category=['frontend','typescript','framework'];
 
     let angularJs = new Skill();
@@ -34,7 +34,7 @@ export class SkillService {
     docker.name='docker';
     docker.description='DOCKER_DESCRIPTION';
     docker.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545068930/docker-logo.png';
-    docker.score=3.5;
+    docker.score=4;
     docker.category=['CI&CD','dev-ops'];
 
     let jenkins = new Skill();
@@ -45,10 +45,10 @@ export class SkillService {
     jenkins.category=['CI&CD','dev-ops'];
 
     let mongo = new Skill();
-    mongo.name='mongo';
+    mongo.name='mongo db';
     mongo.description='MONGO_DESCRIPTION';
     mongo.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1573510346/1_DiNIG4Bfpm65_wwXf_JwMA.png';
-    mongo.score=3;
+    mongo.score=3.5;
     mongo.category=['no sql', 'non relational database', 'database'];
 
 
@@ -56,14 +56,14 @@ export class SkillService {
     redis.name='redis';
     redis.description='REDIS_DESCRIPTION';
     redis.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545408597/redis-logo.png';
-    redis.score=3;
+    redis.score=3.5;
     redis.category=['no sql', 'non relational database', 'database', 'message broker'];
 
     let git = new Skill();
     git.name='GIT';
     git.description='GIT_DESCRIPTION';
     git.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1545409864/git.png';
-    git.score=3;
+    git.score=4;
     git.category=['VCS'];
 
     let svn = new Skill();
