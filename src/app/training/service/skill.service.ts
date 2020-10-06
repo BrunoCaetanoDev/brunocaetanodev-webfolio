@@ -16,6 +16,13 @@ export class SkillService {
     springBoot.score=4.5;
     springBoot.category=['backend','java','framework'];
 
+    let springCloud = new Skill();
+    springCloud.name='spring cloud';
+    springCloud.description='SPRING_CLOUD_DESCRIPTION';
+    springCloud.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1602014655/spring-cloud-logo-removebg-preview.png';
+    springCloud.score=3.5;
+    springCloud.category=['backend','java','framework','cloud'];
+
     let angular = new Skill();
     angular.name='angular';
     angular.description='ANGULAR_DESCRIPTION';
@@ -48,7 +55,7 @@ export class SkillService {
     mongo.name='mongo db';
     mongo.description='MONGO_DESCRIPTION';
     mongo.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1573510346/1_DiNIG4Bfpm65_wwXf_JwMA.png';
-    mongo.score=3.5;
+    mongo.score=4;
     mongo.category=['no sql', 'non relational database', 'database'];
 
 
@@ -87,7 +94,15 @@ export class SkillService {
     oracledb.score=4;
     oracledb.category=['database', 'sql', 'relational database'];
 
+    let aws = new Skill();
+    aws.name='AWS';
+    aws.description='AWS_DESCRIPTION';
+    aws.image='https://res.cloudinary.com/dnku44rpm/image/upload/c_thumb,h_200,w_300/v1602014004/AWS_logo_RGB.png';
+    aws.score=3;
+    aws.category=['cloud','webservices'];
+
     this._skills.push(springBoot);
+    this._skills.push(springCloud);
     this._skills.push(angular);
     this._skills.push(angularJs);
     this._skills.push(docker);
@@ -98,6 +113,7 @@ export class SkillService {
     this._skills.push(svn);
     this._skills.push(mysql);
     this._skills.push(oracledb);
+    this._skills.push(aws);
   }
 
   get skills(): Skill[] {
