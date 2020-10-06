@@ -21,7 +21,7 @@ export class SkillService {
     springCloud.description='SPRING_CLOUD_DESCRIPTION';
     springCloud.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1602014655/spring-cloud-logo-removebg-preview.png';
     springCloud.score=3.5;
-    springCloud.category=['cloud'];
+    springCloud.category=['backend','java','framework','cloud'];
 
     let angular = new Skill();
     angular.name='angular';
@@ -55,7 +55,7 @@ export class SkillService {
     mongo.name='mongo db';
     mongo.description='MONGO_DESCRIPTION';
     mongo.image='https://res.cloudinary.com/dnku44rpm/image/upload/v1573510346/1_DiNIG4Bfpm65_wwXf_JwMA.png';
-    mongo.score=3.5;
+    mongo.score=4;
     mongo.category=['no sql', 'non relational database', 'database'];
 
 
